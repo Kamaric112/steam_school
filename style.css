@@ -9,6 +9,7 @@ html {
   height: 100vh;
 }
 body {
+  height: 100vh;
   display: flex;
   flex-flow: column wrap;
   position: relative;
