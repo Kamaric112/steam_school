@@ -1,71 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steam Store Project</title>
+    <link rel="stylesheet" href="./style.css" />
     <script src="./test.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-content">
-            <div class="logo">
-                <a href="https://store.steampowered.com/">
-                <img src="https://store.cloudflare.steamstatic.com/public/shared/images/responsive/header_logo.png" height="36" alt="STEAM">
-                </a>
-            </div>
-            <h3 class="Title">Best Game (CoderSchool API)</h3>
-            <div class="nav_links">
-                <li>Home</li>
-                <li>Library</li>
-                <li>About Us</li>
-            </div>
+      <div class="header-content">
+        <div class="logo">
+          <a href="#" onclick="window.location.reload()">
+            <img
+              src="https://store.cloudflare.steamstatic.com/public/shared/images/responsive/header_logo.png"
+              height="36"
+              alt="STEAM"
+            />
+          </a>
         </div>
+        <h3 class="Title" id="Hero_Title">Best Game (CoderSchool API)</h3>
+        <div class="nav_links">
+          <li onclick="window.location.reload()">Home</li>
+          <li>Library</li>
+          <li>About Us</li>
+        </div>
+      </div>
     </header>
 
     <main>
-        <div class="search_area">
-            <div id="store_search">
-                <form name="searchForm">
-                    <div class="searchbox">
-                        <input id="searchForm" name="searchForm" type="text" class="default" placeholder="search" size="22" maxlength="64">
-                        <div id="store_search_link">
-                          <img src="https://store.cloudflare.steamstatic.com/public/images/blank.gif">
-                        </div>
-                    </div>
-                </form>
-            
-
-                <div class="category">
-                    <ul class="categoryGroup">
-                        <!-- <button class="getGenreList">Get genre</button> -->
-                        <li></li>
-                        
-                    </ul>
-
-                </div>
+      <div class="search_area">
+        <div id="store_search">
+          <form name="searchForm">
+            <div class="searchbox">
+              <input
+                id="searchForm"
+                name="searchForm"
+                type="text"
+                class="default"
+                placeholder="search"
+                size="22"
+                maxlength="64"
+              />
+              <div id="store_search_link">
+                <img
+                  src="https://store.cloudflare.steamstatic.com/public/images/blank.gif"
+                />
+              </div>
             </div>
+          </form>
+
+          <div class="category">
+            <ul class="categoryGroup">
+              <li></li>
+            </ul>
+          </div>
         </div>
-        <div class="showing_game" id="display">
-            <div>
-                <div class="game_wrapper">
-                    <div class="cover" onclick="">
-                        <img src="" data-id="">
-                        <div class="game_info">
-                        <p>MONSTER HUNTER RISE</p>
-                        <p>                        59,99€30,59€                    </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
+      <div class="showing_game" id="display">
+
+      </div>
     </main>
 
     <footer>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-        <!-- <div>Layout Inspiration from <a href="https://steam-solution-v1.netlify.app/">Hieu Trung Nguyen</a></div> -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </footer>
-</body>
+  </body>
 </html>
