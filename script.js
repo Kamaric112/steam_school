@@ -5,10 +5,6 @@ const searchButton = document.querySelector("#store_search_link");
 const categoryGroup = document.querySelector(".categoryGroup");
 const BASE_URL = `https://cs-steam-game-api.herokuapp.com/`;
 
-// first load
-renderGenre();
-renderGame("features", "");
-
 searchInput.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     event.preventDefault();
@@ -197,3 +193,7 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// first load
+renderGenre();
+renderGame("features", "");
