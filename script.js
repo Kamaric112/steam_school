@@ -7,6 +7,7 @@ const BASE_URL = `https://cs-steam-game-api.herokuapp.com/`
 const nextPageBtn = document.querySelector(".next_page")
 
 
+let counter = 1
 
 
 searchInput.addEventListener("keypress", function (event) {
@@ -98,11 +99,7 @@ const renderGenre = async () => {
       x.addEventListener("click", () => {
         displayHeroText.innerHTML = `${genre.name.toUpperCase()} GAMES`
         renderGame("genres", `${genre.name}`)
-        let counter = 1
-        nextPageBtn.addEventListener("click",() => {
-          counter++
-          renderGame("genres",`${categoryGroup.children[2].textContent}`,`${counter}`)
-        })
+       
       } 
       )
       categoryGroup.appendChild(x)
@@ -153,10 +150,7 @@ const appDetail = async (value) => {
           ${data.description}.
         </div>
         <div class="detail_info">
-          <div class="release_date">Release Date: ${data.release_date.slice(
-            0,
-            9
-          )}</div>
+          <div class="release_date">Release Date: ${data.release_date.slice(0,9)}</div>
           <div class="developer">Developer: ${data.developer}</div>
           <div class="publisher">Publisher: ${data.developer}</div>
           <div class="review"> Positive Ratings: ${data.positive_ratings}</div>
@@ -211,3 +205,7 @@ renderGenre()
 renderGame("features", "")
 
 
+nextPageBtn.addEventListener("click",() => {
+  counter++
+  renderGame("genres",`${categoryGroup.children[2].textContent}`,`${counter}`)
+})
